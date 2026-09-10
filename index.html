@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf6ef">
+  <title>想和你吃顿饭 · 一份小邀请</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="masthead"><a href="./" aria-label="邀请首页">一份小邀请<span class="brand-dot">✳</span></a><span>留一点时间给见面</span></header>
+  <main>
+    <section class="intro" aria-labelledby="headline">
+      <span class="eyebrow">A LITTLE INVITATION FOR YOU</span>
+      <h1 id="headline">好吃的很多，<br>想和<span class="accent">你</span>一起。</h1>
+      <p class="intro-copy">这里有一份只发给你的邀请。<br>想约你一起吃点好吃的，有空一起吗？</p>
+      <div class="illustration" aria-hidden="true">
+        <span class="spark spark-one">✳</span><span class="spark spark-two">✧</span>
+        <div class="napkin"></div><div class="fork">╎<br>│</div>
+        <div class="plate"><div class="plate-inner"><span class="heart">♥</span><span class="plate-note">留一个位置给你</span></div></div>
+        <div class="spoon"></div><span class="hand-note">一起吃饭吧 ↗</span>
+      </div>
+      <p class="little-note">不赶时间，吃饭聊天，刚刚好。</p>
+    </section>
+    <section class="invite-card" aria-label="回应邀请">
+      <div class="card-top"><span>THE PLAN</span><span>01 / 一起吃饭</span></div>
+      <div id="form-view">
+        <div class="plan"><span class="plan-icon" aria-hidden="true">♧</span><div><span class="small-label">这次的安排</span><h2>吃点好吃的</h2></div><span class="plan-tag">和你一起</span></div>
+        <div class="divider"></div>
+        <form id="invite-form" novalidate>
+          <fieldset><legend>你愿意赴约吗？</legend><div class="choices">
+            <label class="choice"><input type="radio" name="response" value="yes"><span>好呀 <span aria-hidden="true">☺</span></span></label>
+            <label class="choice"><input type="radio" name="response" value="no"><span>这次先不了</span></label>
+          </div></fieldset>
+          <div id="time-field" hidden><label class="time-label" for="time">什么时候方便？<span>你来定</span></label><input id="time" name="time" type="text" maxlength="100" placeholder="例如周六下午，或者时间再商量" autocomplete="off"><p class="field-note">不用太正式，写下你方便的时间就好。</p></div>
+          <p id="error" class="error" role="alert"></p>
+          <button class="submit" type="submit">把回应送给你 <span aria-hidden="true">↗</span></button>
+          <p class="privacy">正式版提交后，对方会看到你的选择。</p>
+        </form>
+      </div>
+      <div id="result-view" hidden tabindex="-1" aria-live="polite"><span class="result-icon" aria-hidden="true">✓</span><h2 id="result-title"></h2><p id="result-detail"></p><button id="restart" class="restart" type="button">再体验一次 ↗</button></div>
+      <div class="demo-note"><span>DEMO</span>仅演示交互，回应不会保存或发送。</div>
+    </section>
+  </main>
+  <footer><span>一顿饭的时间，一点小小的期待。</span><span>MADE FOR A GOOD TIME ♡</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
